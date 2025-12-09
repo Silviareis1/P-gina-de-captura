@@ -1,0 +1,116 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: black;
+   font-size: 52%;
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+   /* overflow: hidden; */
+}
+
+header {
+   background-color: #48c5ce;
+   padding: 10px;
+   text-align: center;
+   color: white;
+}
+
+.title h1 {
+   font-size: 2.5em;
+}
+
+section {
+   padding: 20px;
+   background-image: url(images/tecnologia.jpg);
+   background-size: cover;
+   overflow: hidden;
+}
+
+.formContainer {
+   background-color: #ffffffbb;
+   max-width: 230px;
+   padding: 20px;
+   border-radius: 5px;
+   float: right;
+}
+
+h2 {
+   font-size: 1rem;
+}
+
+.mb {
+   margin-bottom: 15px;
+   line-height: 1rem;
+}
+
+input,
+select {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: none;
+   border-radius: 5px;
+}
+.rodape {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   background-color: #202121;
+   padding: 40px;
+}
+input[type="button"] {
+   background-color: #48c5ce;
+   color: white;
+   font-weight: bolder;
+   font-size: 0.9rem;
+   cursor: pointer;
+}
+
+.description {
+   max-width: 40%;
+   color: white;
+}
+.description p, .description h3 {
+   font-size: 0.9rem;
+   margin-bottom: 20px;
+   line-height: 1.3rem;
+}
+.description h3 {
+   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+   body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+   }
+   header{
+      width: 100%;
+      font-size: 0.4rem;
+   }
+   .rodape {
+      flex-direction: column;
+   }
+   .description {
+      max-width: 100%;
+      margin-top: 20px;
+   }
+   .formContainer {
+      float: none;
+      max-width: 100%;
+      margin: auto;
+   }
+}
